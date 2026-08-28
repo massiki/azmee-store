@@ -7,7 +7,7 @@ const customerService = [
   { label: 'TikTok', icon: Music, href: 'https://tiktok.com/@azmeestore' },
   { label: 'Shopee Azmee Store', icon: ShoppingBag, href: 'https://shopee.co.id/azmee_store' },
   { label: 'Shopee Azri Olshop', icon: ShoppingBag, href: 'https://shopee.co.id/ika.sari1090' },
-  { label: 'Lynk', icon: Link2, href: 'https://lynk.id/azmeestore' },
+  { label: 'Lynk', icon: Link2, href: 'https://lynk.id/hameed8283' },
 ];
 const info = ['Kebijakan Privasi', 'Syarat & Ketentuan', 'Kebijakan Pengiriman', 'Kebijakan Pengembalian'];
 
