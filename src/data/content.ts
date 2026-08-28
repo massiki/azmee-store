@@ -237,7 +237,7 @@ export const packages: Package[] = [
 export const stats = [
   { value: '1.000+', label: 'Pelanggan' },
   { value: '4.9/5', label: 'Rating' },
-  { value: '2.500+', label: 'Produk Terjual' },
+  { value: '16.000+', label: 'Produk Terjual' },
 ];
 
 export const problems = [
