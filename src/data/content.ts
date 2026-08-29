@@ -254,3 +254,6 @@ export const navLinks = [
   { label: 'Tentang Kami', href: '#tentang' },
   { label: 'FAQ', href: '#faq' },
 ];
+
+const whatsappMessage = encodeURIComponent('Halo Azmee Store, saya ingin bertanya tentang produk Anda.');
+export const whatsappUrl = `https://wa.me/6281384654138?text=${whatsappMessage}`;
