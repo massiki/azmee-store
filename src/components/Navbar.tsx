@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
-import { navLinks } from '@/data/content';
+import { navLinks, whatsappUrl } from '@/data/content';
 import logo from '@/assets/images/logo.webp';
 
 export function Navbar() {
@@ -25,7 +25,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-cream/85 backdrop-blur-md shadow-[0_1px_0_0_rgba(107,70,43,0.08)]'
+          ? 'bg-offwhite/90 backdrop-blur-md shadow-[0_1px_0_0_rgba(107,70,43,0.06)]'
           : 'bg-transparent'
       }`}
     >
@@ -35,15 +35,15 @@ export function Navbar() {
           className="flex items-center"
           onClick={() => setOpen(false)}
         >
-          <img src={logo} alt="Azmee Store" className="h-10 lg:h-12" />
+          <img src={logo} alt="Azmee Store" className="h-9 lg:h-10" />
         </a>
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-10 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-charcoal/70 transition-colors hover:text-coksu-700"
+                className="text-sm font-medium text-charcoal/60 transition-colors hover:text-coksu-800"
               >
                 {link.label}
               </a>
@@ -54,16 +54,16 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#koleksi"
-            className="hidden rounded-full bg-coksu-800 px-5 py-2.5 text-sm font-semibold text-cream transition-all hover:bg-coksu-900 hover:shadow-md sm:inline-flex"
+            className="hidden rounded-full bg-coksu-800 px-6 py-2.5 text-sm font-semibold text-cream transition-all hover:bg-coksu-900 hover:shadow-md sm:inline-flex"
           >
             Belanja Sekarang
           </a>
           <a
-            href="https://wa.me/6281384654138"
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat WhatsApp"
-            className="hidden h-10 w-10 items-center justify-center rounded-full text-coksu-800 transition-colors hover:bg-coksu-100 sm:flex"
+            className="hidden h-10 w-10 items-center justify-center rounded-full text-coksu-700 transition-colors hover:bg-coksu-100 sm:flex"
           >
             <MessageCircle size={20} strokeWidth={1.75} />
           </a>
@@ -71,7 +71,7 @@ export function Navbar() {
             type="button"
             aria-label={open ? 'Tutup menu' : 'Buka menu'}
             aria-expanded={open}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-coksu-900 transition-colors hover:bg-coksu-100 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-coksu-800 transition-colors hover:bg-coksu-100 lg:hidden"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X size={22} strokeWidth={1.75} /> : <Menu size={22} strokeWidth={1.75} />}
@@ -85,13 +85,13 @@ export function Navbar() {
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="container-content border-t border-coksu-200/50 bg-cream/95 backdrop-blur-md">
+        <div className="container-content border-t border-coksu-100 bg-offwhite/95 backdrop-blur-md">
           <ul className="flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block rounded-lg px-4 py-3 text-base font-medium text-charcoal/80 transition-colors hover:bg-coksu-100 hover:text-coksu-900"
+                  className="block rounded-lg px-4 py-3 text-base font-medium text-charcoal/70 transition-colors hover:bg-coksu-50 hover:text-coksu-800"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

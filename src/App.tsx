@@ -1,10 +1,15 @@
+{/* THESIS: Editorial minimalis — grid majalah asimetris, tipografi display berani, ruang kosong luas, produk sebagai hero. */}
+{/* OWN-WORLD: Palet coksu hangat sebagai aksen, background netral offwhite, Playfair Display untuk headline, Plus Jakarta Sans untuk body. */}
+{/* STORY: Pengunjung memahami "fashion Muslim nyaman+rapi" dalam 5 detik melalui visual yang elegan dan terstruktur seperti majalah fashion. */}
+{/* FIRST VIEWPORT: Headline besar asimetris kiri dengan Playfair Display, gambar produk kanan, CTA kontras coksu-800. */}
+{/* FORM: Editorial minimalis, mode Persuade. */}
+
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { ProblemSection } from '@/components/ProblemSection';
 import { ValueProposition } from '@/components/ValueProposition';
 import { ProductCatalog } from '@/components/ProductCatalog';
 import { SocialProof } from '@/components/SocialProof';
-import { PricingPackages } from '@/components/PricingPackages';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -12,7 +17,7 @@ import { Footer } from '@/components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-offwhite">
       <Navbar />
       <main>
         <Hero />
@@ -20,7 +25,6 @@ function App() {
         <ValueProposition />
         <ProductCatalog />
         <SocialProof />
-        {/* <PricingPackages /> */}
         <Testimonials />
         <FAQ />
         <FinalCTA />
