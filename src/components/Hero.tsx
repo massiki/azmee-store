@@ -1,12 +1,16 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Reveal } from '@/components/Reveal';
 import heroPhoto from '@/assets/images/01-foto-section.webp';
+import logo from '@/assets/images/logo-2.jpeg'
 
 export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-offwhite pt-20 lg:pt-24">
       <Reveal className='text-center'>
-        <p className="font-display text-5xl font-medium tracking-[0.28em] text-coksu-950 sm:text-6xl lg:text-7xl">
+        <p className="flex items-center justify-center">
+          <img src={logo} alt="" width={70} />
+        </p>
+        <p className="mt-4 font-display text-5xl font-medium tracking-[0.28em] text-coksu-950 sm:text-6xl lg:text-7xl">
           AZHI
         </p>
         <div className="mt-4 flex items-center justify-center gap-3">
