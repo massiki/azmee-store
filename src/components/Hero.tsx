@@ -5,16 +5,22 @@ import heroPhoto from '@/assets/images/01-foto-section.webp';
 export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-offwhite pt-20 lg:pt-24">
-      <div className="container-content relative grid grid-cols-1 items-center gap-12 py-16 sm:py-20 lg:grid-cols-12 lg:gap-8 lg:py-28">
+      <Reveal className='text-center'>
+        <p className="font-display text-5xl font-medium tracking-[0.28em] text-coksu-950 sm:text-6xl lg:text-7xl">
+          AZHI
+        </p>
+        <div className="mt-4 flex items-center justify-center gap-3">
+          <span className="h-px w-10 bg-coksu-300 sm:w-16" />
+          <span className="h-1.5 w-1.5 rotate-45 bg-coksu-400" />
+          <span className="h-px w-10 bg-coksu-300 sm:w-16" />
+        </div>
+        <p className="mt-4 text-xs uppercase tracking-[0.4em] text-coksu-500">
+          Fashion Muslim
+        </p>
+      </Reveal>
+      <div className="container-content relative grid grid-cols-1 items-center gap-12 py-16 sm:py-20 lg:grid-cols-12 lg:gap-8 lg:pb-28 pt-12 sm:pt-16 lg:pt-20">
         {/* Text — takes 5 cols on lg */}
         <div className="order-2 lg:order-1 lg:col-span-5">
-          <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-coksu-200 bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-coksu-600">
-              <Sparkles size={14} strokeWidth={1.75} />
-              Fashion Muslim Pria &amp; Anak
-            </span>
-          </Reveal>
-
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-5xl font-medium leading-[0.95] tracking-tight text-coksu-950 sm:text-6xl lg:text-7xl">
               Tampil
