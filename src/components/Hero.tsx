@@ -1,7 +1,7 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Reveal } from '@/components/Reveal';
 import heroPhoto from '@/assets/images/01-foto-section.webp';
-import logo from '@/assets/images/logo-2.jpeg'
+import logo from '@/assets/images/logo-02.png'
 
 export function Hero() {
   return (
