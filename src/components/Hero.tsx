@@ -75,7 +75,7 @@ export function Hero() {
                 src={heroPhoto}
                 alt="Pria Indonesia mengenakan kurta premium Azmee Store"
                 className="h-full w-full object-cover"
-                fetchPriority="high"
+                fetchpriority="high"
                 width={720}
                 height={900}
               />

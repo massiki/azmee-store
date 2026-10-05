@@ -53,7 +53,7 @@ Keberhasilan berarti pengunjung menemukan produk yang sesuai kebutuhan, percaya 
 - **Suara:** Hangat, meyakinkan, berorientasi keluarga. Menekankan kenyamanan, praktis, dan kerapian. Santai tapi sopan.
 - **Logo:** `logo.webp` di aset
 - **Meta theme color:** `#6B462B` (coksu-800)
-- **Domain:** `azmeestore.com`
+- **Domain:** `azmee-store.my.id`
 
 ## Evidence on Hand
 
